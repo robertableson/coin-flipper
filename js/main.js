@@ -3,8 +3,10 @@
 class Coin{
     getHeadsOrTails(){
         //do api call to backend here
-        
-        console.log('test') 
+        const result = 'heads' //test result 
+        const domElement_resultDisplay = document.querySelector('#result-display')
+
+        domElement_resultDisplay.innerHTML = `You flipped: ${result}`
     }
 }
 
